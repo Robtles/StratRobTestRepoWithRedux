@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'StratRobTestRepoWithRedux'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Simple project with simple extensions.'
   s.swift_version    = '4.2'
  

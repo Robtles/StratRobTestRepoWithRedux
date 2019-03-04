@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46F2F9CF57418858BBA11F8E /* Pods_StratRobTestRepoWithRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6579AE6DF342E0ABB4E68E6 /* Pods_StratRobTestRepoWithRedux.framework */; };
 		D460B412222D3D0900B40493 /* StratRobTestRepoWithRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = D460B410222D3D0900B40493 /* StratRobTestRepoWithRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D460B419222D3D1700B40493 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B418222D3D1700B40493 /* Date+Extension.swift */; };
+		D460B491222D887700B40493 /* UIRefreshControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B488222D887700B40493 /* UIRefreshControl+Extension.swift */; };
+		D460B492222D887700B40493 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B489222D887700B40493 /* String+Extension.swift */; };
+		D460B493222D887700B40493 /* NSNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B48A222D887700B40493 /* NSNumber+Extension.swift */; };
+		D460B494222D887700B40493 /* CLPlacemark+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B48B222D887700B40493 /* CLPlacemark+Extension.swift */; };
+		D460B495222D887700B40493 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B48C222D887700B40493 /* UIView+Extension.swift */; };
+		D460B496222D887700B40493 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B48D222D887700B40493 /* Date+Extension.swift */; };
+		D460B497222D887700B40493 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B48E222D887700B40493 /* Double+Extension.swift */; };
+		D460B498222D887700B40493 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B48F222D887700B40493 /* Int+Extension.swift */; };
+		D460B49C222D8A6B00B40493 /* Delayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460B49B222D8A6B00B40493 /* Delayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20CADEA7FF2C5AC9C03E7A13 /* Pods-StratRobTestRepoWithRedux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StratRobTestRepoWithRedux.release.xcconfig"; path = "Target Support Files/Pods-StratRobTestRepoWithRedux/Pods-StratRobTestRepoWithRedux.release.xcconfig"; sourceTree = "<group>"; };
+		2B40A0316A0ED0364C579849 /* Pods-StratRobTestRepoWithRedux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StratRobTestRepoWithRedux.debug.xcconfig"; path = "Target Support Files/Pods-StratRobTestRepoWithRedux/Pods-StratRobTestRepoWithRedux.debug.xcconfig"; sourceTree = "<group>"; };
+		C6579AE6DF342E0ABB4E68E6 /* Pods_StratRobTestRepoWithRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StratRobTestRepoWithRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D460B40D222D3D0900B40493 /* StratRobTestRepoWithRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StratRobTestRepoWithRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D460B410222D3D0900B40493 /* StratRobTestRepoWithRedux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StratRobTestRepoWithRedux.h; sourceTree = "<group>"; };
 		D460B411222D3D0900B40493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D460B418222D3D1700B40493 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D460B438222D692F00B40493 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D460B488222D887700B40493 /* UIRefreshControl+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Extension.swift"; sourceTree = "<group>"; };
+		D460B489222D887700B40493 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D460B48A222D887700B40493 /* NSNumber+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumber+Extension.swift"; sourceTree = "<group>"; };
+		D460B48B222D887700B40493 /* CLPlacemark+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLPlacemark+Extension.swift"; sourceTree = "<group>"; };
+		D460B48C222D887700B40493 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D460B48D222D887700B40493 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D460B48E222D887700B40493 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		D460B48F222D887700B40493 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		D460B49B222D8A6B00B40493 /* Delayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,17 +44,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F2F9CF57418858BBA11F8E /* Pods_StratRobTestRepoWithRedux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32A897A4FAC751C3ABFD9973 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B40A0316A0ED0364C579849 /* Pods-StratRobTestRepoWithRedux.debug.xcconfig */,
+				20CADEA7FF2C5AC9C03E7A13 /* Pods-StratRobTestRepoWithRedux.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E03FBBC34EAE3F53D2FF229 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D460B438222D692F00B40493 /* libAFNetworking.a */,
+				C6579AE6DF342E0ABB4E68E6 /* Pods_StratRobTestRepoWithRedux.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D460B403222D3D0900B40493 = {
 			isa = PBXGroup;
 			children = (
 				D460B40F222D3D0900B40493 /* StratRobTestRepoWithRedux */,
 				D460B40E222D3D0900B40493 /* Products */,
+				32A897A4FAC751C3ABFD9973 /* Pods */,
+				8E03FBBC34EAE3F53D2FF229 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,11 +90,51 @@
 		D460B40F222D3D0900B40493 /* StratRobTestRepoWithRedux */ = {
 			isa = PBXGroup;
 			children = (
+				D460B486222D885700B40493 /* SDK */,
 				D460B410222D3D0900B40493 /* StratRobTestRepoWithRedux.h */,
 				D460B411222D3D0900B40493 /* Info.plist */,
-				D460B418222D3D1700B40493 /* Date+Extension.swift */,
 			);
 			path = StratRobTestRepoWithRedux;
+			sourceTree = "<group>";
+		};
+		D460B485222D87D300B40493 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D460B48B222D887700B40493 /* CLPlacemark+Extension.swift */,
+				D460B48D222D887700B40493 /* Date+Extension.swift */,
+				D460B48E222D887700B40493 /* Double+Extension.swift */,
+				D460B48F222D887700B40493 /* Int+Extension.swift */,
+				D460B48A222D887700B40493 /* NSNumber+Extension.swift */,
+				D460B489222D887700B40493 /* String+Extension.swift */,
+				D460B488222D887700B40493 /* UIRefreshControl+Extension.swift */,
+				D460B48C222D887700B40493 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D460B486222D885700B40493 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				D460B487222D885D00B40493 /* Basis */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		D460B487222D885D00B40493 /* Basis */ = {
+			isa = PBXGroup;
+			children = (
+				D460B485222D87D300B40493 /* Extensions */,
+				D460B49A222D8A2B00B40493 /* Services */,
+			);
+			path = Basis;
+			sourceTree = "<group>";
+		};
+		D460B49A222D8A2B00B40493 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D460B49B222D8A6B00B40493 /* Delayer.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D460B415222D3D0900B40493 /* Build configuration list for PBXNativeTarget "StratRobTestRepoWithRedux" */;
 			buildPhases = (
+				04E7FA0494882C8D1F3376EE /* [CP] Check Pods Manifest.lock */,
 				D460B408222D3D0900B40493 /* Headers */,
 				D460B409222D3D0900B40493 /* Sources */,
 				D460B40A222D3D0900B40493 /* Frameworks */,
@@ -129,12 +212,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04E7FA0494882C8D1F3376EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StratRobTestRepoWithRedux-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D460B409222D3D0900B40493 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D460B419222D3D1700B40493 /* Date+Extension.swift in Sources */,
+				D460B492222D887700B40493 /* String+Extension.swift in Sources */,
+				D460B498222D887700B40493 /* Int+Extension.swift in Sources */,
+				D460B494222D887700B40493 /* CLPlacemark+Extension.swift in Sources */,
+				D460B497222D887700B40493 /* Double+Extension.swift in Sources */,
+				D460B49C222D8A6B00B40493 /* Delayer.swift in Sources */,
+				D460B491222D887700B40493 /* UIRefreshControl+Extension.swift in Sources */,
+				D460B495222D887700B40493 /* UIView+Extension.swift in Sources */,
+				D460B493222D887700B40493 /* NSNumber+Extension.swift in Sources */,
+				D460B496222D887700B40493 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +381,7 @@
 		};
 		D460B416222D3D0900B40493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B40A0316A0ED0364C579849 /* Pods-StratRobTestRepoWithRedux.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -283,7 +400,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rob.StratRobTestRepoWithRedux;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,6 +409,7 @@
 		};
 		D460B417222D3D0900B40493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CADEA7FF2C5AC9C03E7A13 /* Pods-StratRobTestRepoWithRedux.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -310,7 +428,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rob.StratRobTestRepoWithRedux;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

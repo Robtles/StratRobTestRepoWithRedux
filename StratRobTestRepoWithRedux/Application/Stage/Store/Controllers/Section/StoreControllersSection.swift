@@ -10,12 +10,12 @@ import ReSwift
 
 
 
-struct StoreControllersSection {
+public struct StoreControllersSection {
     
 }
 
 
-protocol StoreControllersSectionProtocol: StoreProtocol, OldPropsProtocol {
+public protocol StoreControllersSectionProtocol: StoreProtocol, OldPropsProtocol {
     
     var current: Bool { get }
     
@@ -25,9 +25,9 @@ protocol StoreControllersSectionProtocol: StoreProtocol, OldPropsProtocol {
     
 }
 
-extension StoreControllersSectionProtocol {
+public extension StoreControllersSectionProtocol {
     
-    var current: Bool {
+    public var current: Bool {
         get {
             return data["current"] as? Bool ?? false
         }
@@ -36,7 +36,7 @@ extension StoreControllersSectionProtocol {
         }
     }
     
-    var routes: [Route] {
+    public var routes: [Route] {
         get {
             return data["routes"] as? [Route] ?? []
         }
@@ -45,7 +45,7 @@ extension StoreControllersSectionProtocol {
         }
     }
     
-    static func reduce(action: Action, state: Self?) -> Self {
+    public static func reduce(action: Action, state: Self?) -> Self {
         var state = state ?? Self()
         switch action {
         case let initAction as ControllersSectionInit:
@@ -68,7 +68,7 @@ extension StoreControllersSectionProtocol {
         return state
     }
     
-    mutating func updateOldProps() {
+    public mutating func updateOldProps() {
         self.oldProps = self.data
     }
     

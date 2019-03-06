@@ -11,18 +11,18 @@ import ReSwift; import UIKit
 
 // MARK: Typealias
 
-typealias Compass = ShapeApplicationCompass
+public typealias Compass = ShapeApplicationCompass
 
 // MARK: - Type
 
-class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelegate, StoreSubscriber {
+public class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelegate, StoreSubscriber {
 
     // MARK: - Static Properties
     
-    static let shared = Compass()
+    public static let shared = Compass()
     
     /// Should extend this
-    var tabBarViewControllers: [ShapeControllersFeature] {
+    public var tabBarViewControllers: [ShapeControllersFeature] {
         return []
     }
     
@@ -37,13 +37,13 @@ class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelegate, S
         store.subscribe(self)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) not intended to be used")
     }
 
     // MARK: Life Methods
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.setViewControllers(tabBarViewControllers, animated: true)
         self.tabBar.isHidden = true
@@ -51,7 +51,7 @@ class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelegate, S
     
     // MARK: Navigation Methods
     
-    func push(_ route: Route, in section: String = "current") {
+    public func push(_ route: Route, in section: String = "current") {
         guard let currentSection = self.selectedViewController as? ShapeControllersSection else {
             return
         }
@@ -67,6 +67,6 @@ class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelegate, S
     
     // MARK: Store Methods
     
-    func newState(state: Store) {}
+    public func newState(state: Store) {}
 
 }

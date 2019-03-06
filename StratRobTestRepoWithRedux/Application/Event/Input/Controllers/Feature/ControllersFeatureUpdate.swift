@@ -10,17 +10,17 @@ import ReSwift
 
 
 
-struct ControllersFeatureUpdate: Input {
+public struct ControllersFeatureUpdate: Input {
     
     // MARK: - Instance Properties
     
-    var data: [String : Any?]
+    public var data: [String : Any?]
     
-    var meta: ControllersFeatureUpdate.Meta
+    public var meta: ControllersFeatureUpdate.Meta
     
     // MARK: - Init Methods
     
-    init(_ data: [String : Any?]) {
+    public init(_ data: [String : Any?]) {
         self.data = data
         self.meta = ControllersFeatureUpdate.Meta(.input)
     }

@@ -37,16 +37,16 @@ public protocol EventQuery: Event {
     
 }
 
-extension EventQuery {
+public extension EventQuery {
     
-    var `class`: EventQueryClass {
+    public var `class`: EventQueryClass {
         guard let name = data["className"] as? String, let fields = data["fields"] as? [String] else {
             return _Class(name: "", fields: [])
         }
         return _Class(name: name, fields:fields)
     }
     
-    var `where`: EventQueryWhere {
+    public var `where`: EventQueryWhere {
         guard let field = data["field"] as? [String: [String: Any]], let limit = data["limit"] as? Int, let order = data["order"] as? EventQueryWhereOrder, let start = data["start"] as? Int else {
             return _Where(field: [:], limit: nil, order: .ascending, start: 0)
         }
@@ -54,16 +54,16 @@ extension EventQuery {
     }
 }
 
-class Query: EventQuery {
+public class Query: EventQuery {
     
-    var data: [String : Any?]
+    public var data: [String : Any?]
     
-    required init(className: String, fields: [String], field: [String : [String : Any]] = [:], limit: Int? = nil, order: EventQueryWhereOrder = .ascending, start: Int = 0) {
+    public required init(className: String, fields: [String], field: [String : [String : Any]] = [:], limit: Int? = nil, order: EventQueryWhereOrder = .ascending, start: Int = 0) {
         self.data = ["className": className, "fields": fields, "field": field, "limit": limit, "order": order, "start": start]
         self.meta = Meta(.query)
     }
     
-    var meta: Query.Meta
+    public var meta: Query.Meta
     
 }
 
@@ -86,11 +86,11 @@ public protocol EventQueryClass {
     
 }
 
-struct _Class: EventQueryClass {
+public struct _Class: EventQueryClass {
     
-    var name: String
+    public var name: String
     
-    var fields: [String]
+    public var fields: [String]
     
 }
 
@@ -142,14 +142,14 @@ public protocol EventQueryWhere {
     
 }
 
-struct _Where: EventQueryWhere {
+public struct _Where: EventQueryWhere {
     
-    var field: [String : [String : Any]]
+    public var field: [String : [String : Any]]
     
-    var limit: Int?
+    public var limit: Int?
     
-    var order: EventQueryWhereOrder
+    public var order: EventQueryWhereOrder
     
-    var start: Int
+    public var start: Int
     
 }

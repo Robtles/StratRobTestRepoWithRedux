@@ -10,29 +10,29 @@ import ReSwift
 
 
 
-struct ControllersSectionInit: Input {
+public struct ControllersSectionInit: Input {
     
     // MARK: - Instance Properties
     
-    var data: [String : Any?]
+    public var data: [String : Any?]
     
-    var meta: ControllersSectionInit.Meta = ControllersSectionInit.Meta(.input)
+    public var meta: ControllersSectionInit.Meta = ControllersSectionInit.Meta(.input)
     
-    var routes: [Route] {
+    public var routes: [Route] {
         return data["routes"] as? [Route] ?? []
     }
     
     // MARK: - Init Methods
     
-    init() {
+    public init() {
         self.data = [:]
     }
     
-    init(_ data: [String : Any?]) {
+    public init(_ data: [String : Any?]) {
         self.init()
     }
     
-    init(withRoute route: Route) {
+    public init(withRoute route: Route) {
         self.data = ["routes": [route]]
     }
     

@@ -10,6 +10,6 @@ import Foundation
 
 
 
-struct StoreControllersFeature {
+public struct StoreControllersFeature {
     
 }

@@ -9,14 +9,14 @@
 import ReSwift
 
 
-let store: ReSwift.Store<Store> = ReSwift.Store(reducer: Store.reduce, state: nil)
+public let store: ReSwift.Store<Store> = ReSwift.Store(reducer: Store.reduce, state: nil)
 
 
-struct Store: StateType {
+public struct Store: StateType {
     
     // MARK: - Store Methods
     
-    static func reduce(action: Action, state: Store?) -> Store {
+    public static func reduce(action: Action, state: Store?) -> Store {
         return Store()
     }
     
@@ -27,7 +27,7 @@ struct Store: StateType {
  * Every sub-store must conform to this protocol.
  * It includes both the state (as key-values in data), and the reducer function.
  */
-protocol StoreProtocol {
+public protocol StoreProtocol {
     
     var data: [String: Any?] { get set }
     
@@ -41,7 +41,7 @@ protocol StoreProtocol {
  * Sometimes we need to access the old state to compare it with the new one.
  * Those objects will have to conform to this protocol.
  */
-protocol OldPropsProtocol {
+public protocol OldPropsProtocol {
     
     var oldProps: [String: Any?] { get set }
     
@@ -53,9 +53,9 @@ protocol OldPropsProtocol {
  * Extended the protocol to provide a default implementation of the reducer
  * so that every feature-related sub-store doesn't have to re-define the same.
  */
-extension StoreProtocol {
+public extension StoreProtocol {
     
-    static func reduce(action: Action, state: Self?) -> Self {
+    public static func reduce(action: Action, state: Self?) -> Self {
         var state = state ?? Self()
         switch action {
         case let input as Input:

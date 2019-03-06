@@ -10,22 +10,22 @@ import ReSwift
 
 
 
-struct ControllersFeatureDelete: Input {
+public struct ControllersFeatureDelete: Input {
     
     // MARK: - Instance Properties
     
-    var data: [String : Any?]
+    public var data: [String : Any?]
     
-    var meta: ControllersFeatureDelete.Meta
+    public var meta: ControllersFeatureDelete.Meta
     
     // MARK: - Init Methods
     
-    init() {
+    public init() {
         self.data = [:]
         self.meta = ControllersFeatureDelete.Meta(.input)
     }
     
-    init(_ data: [String : Any?]) {
+    public init(_ data: [String : Any?]) {
         self.init()
     }
     

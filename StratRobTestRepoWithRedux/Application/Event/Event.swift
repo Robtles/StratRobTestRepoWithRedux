@@ -31,13 +31,13 @@ public protocol Event: Action {
     
 }
 
-extension Event {
+public extension Event {
     
-    var type: String {
+    public var type: String {
         return String(describing: Self.self)
     }
     
-    static var type: String {
+    public static var type: String {
         return String(describing: Self.self)
     }
     
@@ -86,7 +86,7 @@ public protocol EventMetaProtocol {
     
 }
 
-extension EventMetaProtocol {
+public extension EventMetaProtocol {
     
     public var build: Int {
         return 1

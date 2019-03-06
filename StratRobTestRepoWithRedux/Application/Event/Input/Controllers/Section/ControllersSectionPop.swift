@@ -10,21 +10,21 @@ import ReSwift
 
 
 
-struct ControllersSectionPop: Input {
+public struct ControllersSectionPop: Input {
     
     // MARK: - Instance Properties
     
-    var data: [String : Any?]
+    public var data: [String : Any?]
     
-    var meta: ControllersSectionPop.Meta = ControllersSectionPop.Meta(.input)
+    public var meta: ControllersSectionPop.Meta = ControllersSectionPop.Meta(.input)
     
     // MARK: - Init Methods
     
-    init() {
+    public init() {
         self.data = [:]
     }
     
-    init(_ data: [String : Any?]) {
+    public init(_ data: [String : Any?]) {
         self.data = data
     }
     

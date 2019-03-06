@@ -10,14 +10,14 @@ import ReSwift
 
 
 
-struct StoreControllersUtility {
+public struct StoreControllersUtility {
     
     
     
 }
 
 
-protocol StoreControllersUtilityProtocol: StoreProtocol, OldPropsProtocol {
+public protocol StoreControllersUtilityProtocol: StoreProtocol, OldPropsProtocol {
     
     var opened: Bool { get }
     
@@ -27,17 +27,17 @@ protocol StoreControllersUtilityProtocol: StoreProtocol, OldPropsProtocol {
     
 }
 
-extension StoreControllersUtilityProtocol {
+public extension StoreControllersUtilityProtocol {
     
-    var opened: Bool {
+    public var opened: Bool {
         return self.data["opened"] as? Bool ?? false
     }
     
-    var shouldPerformCompletion: Bool {
+    public var shouldPerformCompletion: Bool {
         return self.data["perform_completion"] as? Bool ?? false
     }
     
-    var wasOpened: Bool {
+    public var wasOpened: Bool {
         return self.oldProps["opened"] as? Bool ?? false
     }
     

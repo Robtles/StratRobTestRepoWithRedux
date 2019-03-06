@@ -10,9 +10,9 @@ import UIKit
 
 
 
-public class ShapeControllersFeature: UIViewController {
+open class ShapeControllersFeature: UIViewController {
     
-    public override func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if self.isBeingDismissed || self.isMovingFromParent {
             store.dispatch(ControllersSectionPop())

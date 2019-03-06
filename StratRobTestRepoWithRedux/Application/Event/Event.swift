@@ -43,11 +43,11 @@ public extension Event {
     
 }
 
-public struct EventMeta: EventMetaProtocol {
+open class EventMeta: EventMetaProtocol {
     
-    public var group: EventMeta.Group
+    open var group: EventMeta.Group
     
-    public init(_ group: EventMeta.Group) {
+    required public init(_ group: EventMeta.Group) {
         self.group = group
     }
     

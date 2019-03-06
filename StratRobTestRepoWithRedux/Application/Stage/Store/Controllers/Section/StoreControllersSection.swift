@@ -10,7 +10,7 @@ import ReSwift
 
 
 
-public struct StoreControllersSection {
+open class StoreControllersSection {
     
 }
 

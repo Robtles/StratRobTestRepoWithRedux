@@ -10,6 +10,6 @@ import Foundation
 
 
 
-public struct StoreControllersFeature {
+open class StoreControllersFeature {
     
 }

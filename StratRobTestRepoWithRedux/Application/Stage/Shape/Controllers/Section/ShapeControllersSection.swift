@@ -10,19 +10,19 @@ import ReSwift; import UIKit;
 
 
 
-public class ShapeControllersSection: UINavigationController, UINavigationControllerDelegate, StoreSubscriber {
+open class ShapeControllersSection: UINavigationController, UINavigationControllerDelegate, StoreSubscriber {
     
     // MARK: - Instance Properties
     
-    public var identifier: String {
+    open var identifier: String {
         return ""
     }
     
-    public var sectionType: String {
+    open var sectionType: String {
         return "current"
     }
     
-    public var shouldShowNavigationBar: Bool {
+    open var shouldShowNavigationBar: Bool {
         return true
     }
 
@@ -48,20 +48,20 @@ public class ShapeControllersSection: UINavigationController, UINavigationContro
     
     // MARK: Life Methods
     
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationBar.isHidden = !self.shouldShowNavigationBar
         store.subscribe(self)
     }
     
-    public override func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         store.unsubscribe(self)
     }
     
     // MARK: Section Methods
     
-    @objc public func pop() {
+    @objc open func pop() {
         if Thread.isMainThread {
             self.popViewController(animated: true)
             
@@ -72,7 +72,7 @@ public class ShapeControllersSection: UINavigationController, UINavigationContro
         }
     }
     
-    public func push(_ feature: ShapeControllersFeature) {
+    open func push(_ feature: ShapeControllersFeature) {
         if Thread.isMainThread {
             self.pushViewController(feature, animated: true)
         } else {
@@ -84,6 +84,6 @@ public class ShapeControllersSection: UINavigationController, UINavigationContro
     
     // MARK: Store Methods
     
-    public func newState(state: Store) {}
+    open func newState(state: Store) {}
     
 }

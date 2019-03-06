@@ -10,7 +10,7 @@ import ReSwift
 
 
 
-public struct StoreControllersUtility {
+open class StoreControllersUtility {
     
     
     

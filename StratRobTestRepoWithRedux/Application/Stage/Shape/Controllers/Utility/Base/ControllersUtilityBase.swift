@@ -6,17 +6,17 @@
 //  Copyright © 2019 com.rob. All rights reserved.
 //
 
-public class ControllersUtilityBase: ShapeControllersFeature {
+open class ControllersUtilityBase: ShapeControllersFeature {
     
     // MARK: Instance Properties
     
-    public var isDismissingByBottom: Bool = false
+    open var isDismissingByBottom: Bool = false
     
     // MARK: View Properties
     
-    @IBOutlet public weak var alertView: UIView?
+    @IBOutlet open weak var alertView: UIView?
     
-    @IBOutlet public weak var overlayView: UIView?
+    @IBOutlet open weak var overlayView: UIView?
     
 }
 

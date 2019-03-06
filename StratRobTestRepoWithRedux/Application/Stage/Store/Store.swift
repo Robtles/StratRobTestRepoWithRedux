@@ -12,7 +12,7 @@ import ReSwift
 public let store: ReSwift.Store<Store> = ReSwift.Store(reducer: Store.reduce, state: nil)
 
 
-public struct Store: StateType {
+open class Store: StateType {
     
     // MARK: - Store Methods
     

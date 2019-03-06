@@ -10,13 +10,13 @@ import ReSwift
 
 
 
-public struct ControllersSectionPush: Input {
+open class ControllersSectionPush: Input {
     
     // MARK: - Instance Properties
     
-    public var data: [String : Any?]
+    open var data: [String : Any?]
     
-    public var route: Route {
+    open var route: Route {
         get {
             return self.data["route"] as? Route ?? Route()
         }
@@ -25,7 +25,7 @@ public struct ControllersSectionPush: Input {
         }
     }
     
-    public var meta: ControllersSectionPush.Meta = ControllersSectionPush.Meta(.input)
+    open var meta: ControllersSectionPush.Meta = ControllersSectionPush.Meta(.input)
     
     // MARK: - Init Methods
     
@@ -33,7 +33,7 @@ public struct ControllersSectionPush: Input {
         self.data = [:]
     }
     
-    public init(_ data: [String : Any?]) {
+    required public init(_ data: [String : Any?]) {
         self.data = data
     }
     

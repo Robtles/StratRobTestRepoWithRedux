@@ -54,16 +54,16 @@ public extension EventQuery {
     }
 }
 
-public class Query: EventQuery {
+open class Query: EventQuery {
     
-    public var data: [String : Any?]
+    open var data: [String : Any?]
     
     public required init(className: String, fields: [String], field: [String : [String : Any]] = [:], limit: Int? = nil, order: EventQueryWhereOrder = .ascending, start: Int = 0) {
         self.data = ["className": className, "fields": fields, "field": field, "limit": limit, "order": order, "start": start]
         self.meta = Meta(.query)
     }
     
-    public var meta: Query.Meta
+    open var meta: Query.Meta
     
 }
 
@@ -86,11 +86,16 @@ public protocol EventQueryClass {
     
 }
 
-public struct _Class: EventQueryClass {
+open class _Class: EventQueryClass {
     
-    public var name: String
+    open var name: String
     
-    public var fields: [String]
+    open var fields: [String]
+    
+    public init(name: String, fields: [String]) {
+        self.name = name
+        self.fields = fields
+    }
     
 }
 
@@ -142,14 +147,21 @@ public protocol EventQueryWhere {
     
 }
 
-public struct _Where: EventQueryWhere {
+open class _Where: EventQueryWhere {
     
-    public var field: [String : [String : Any]]
+    open var field: [String : [String : Any]]
     
-    public var limit: Int?
+    open var limit: Int?
     
-    public var order: EventQueryWhereOrder
+    open var order: EventQueryWhereOrder
     
-    public var start: Int
+    open var start: Int
+    
+    public init(field: [String : [String : Any]], limit: Int?, order: EventQueryWhereOrder, start: Int) {
+        self.field = field
+        self.limit = limit
+        self.order = order
+        self.start = start
+    }
     
 }

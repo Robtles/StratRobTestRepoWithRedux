@@ -10,11 +10,11 @@ import Foundation
 
 
 
-public struct Route {
+open class Route {
 
-    public var actionId: String
+    open var actionId: String
     
-    public var data: [String]
+    open var data: [String]
     
     public init(action: String = "", data: [String] = []) {
         self.actionId = action

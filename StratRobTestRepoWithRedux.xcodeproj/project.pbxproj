@@ -37,6 +37,8 @@
 		D4E49745223012070007C625 /* ControllersUtilityBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E49744223012070007C625 /* ControllersUtilityBase.swift */; };
 		D4E49748223014C80007C625 /* StoreControllersUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E49747223014C80007C625 /* StoreControllersUtility.swift */; };
 		D4E4974B223015110007C625 /* StoreControllersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4974A223015110007C625 /* StoreControllersFeature.swift */; };
+		D4E4976B22316D0A0007C625 /* ShapeApplicationMainBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4976A22316D0A0007C625 /* ShapeApplicationMainBase.swift */; };
+		D4E4976E22316EE20007C625 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4976D22316EE20007C625 /* DeviceUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		D4E49744223012070007C625 /* ControllersUtilityBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersUtilityBase.swift; sourceTree = "<group>"; };
 		D4E49747223014C80007C625 /* StoreControllersUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllersUtility.swift; sourceTree = "<group>"; };
 		D4E4974A223015110007C625 /* StoreControllersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllersFeature.swift; sourceTree = "<group>"; };
+		D4E4976A22316D0A0007C625 /* ShapeApplicationMainBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeApplicationMainBase.swift; sourceTree = "<group>"; };
+		D4E4976D22316EE20007C625 /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 			children = (
 				D460B485222D87D300B40493 /* Extensions */,
 				D460B49A222D8A2B00B40493 /* Services */,
+				D4E4976C22316ED50007C625 /* Utils */,
 			);
 			path = Basis;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				D4E497402230115C0007C625 /* ShapeApplicationCompass.swift */,
+				D4E4976A22316D0A0007C625 /* ShapeApplicationMainBase.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -384,6 +390,14 @@
 				D4E4974A223015110007C625 /* StoreControllersFeature.swift */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		D4E4976C22316ED50007C625 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D4E4976D22316EE20007C625 /* DeviceUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D460B492222D887700B40493 /* String+Extension.swift in Sources */,
+				D4E4976E22316EE20007C625 /* DeviceUtils.swift in Sources */,
 				D460B498222D887700B40493 /* Int+Extension.swift in Sources */,
 				D4E49717222ED1F90007C625 /* Route.swift in Sources */,
 				D4E49739223008CF0007C625 /* ControllersSectionPush.swift in Sources */,
@@ -513,6 +528,7 @@
 				D4E4971A222ED2510007C625 /* RouteAction.swift in Sources */,
 				D4E497272230082C0007C625 /* EventOrder.swift in Sources */,
 				D4E49737223008C90007C625 /* ControllersSectionPop.swift in Sources */,
+				D4E4976B22316D0A0007C625 /* ShapeApplicationMainBase.swift in Sources */,
 				D460B493222D887700B40493 /* NSNumber+Extension.swift in Sources */,
 				D4E4971F223006A80007C625 /* StoreControllersSection.swift in Sources */,
 				D4E49722223007810007C625 /* Event.swift in Sources */,

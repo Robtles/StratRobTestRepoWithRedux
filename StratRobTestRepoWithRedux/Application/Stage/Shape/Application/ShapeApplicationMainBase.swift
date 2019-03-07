@@ -34,14 +34,13 @@ open class ShapeApplicationMainBase: UIResponder, UIApplicationDelegate {
     }
     
     open func replace(with viewController: UIViewController) {
-        defer {
-            window?.makeKeyAndVisible()
-        }
         if Thread.isMainThread {
             window?.rootViewController = viewController
+            window?.makeKeyAndVisible()
         } else {
             DispatchQueue.main.async {
                 self.window?.rootViewController = viewController
+                self.window?.makeKeyAndVisible()
             }
         }
     }

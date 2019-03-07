@@ -12,7 +12,7 @@ import CoreLocation; import Foundation
 
 extension CLPlacemark {
     
-    public var compactAddress: String? {
+    open var compactAddress: String? {
         var result = ""
         if let street = thoroughfare {
             result += "\(street)"

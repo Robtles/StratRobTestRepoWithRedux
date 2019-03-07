@@ -10,7 +10,7 @@ import UIKit
 
 extension UIRefreshControl {
     
-    public func endRefreshingWithCheck() {
+    open func endRefreshingWithCheck() {
         if self.isRefreshing {
             self.endRefreshing()
         }

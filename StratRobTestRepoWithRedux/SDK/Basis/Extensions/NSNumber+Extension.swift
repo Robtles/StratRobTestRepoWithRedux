@@ -12,14 +12,14 @@ import Foundation
 
 extension NSNumber {
     
-    public var formatCurrency: String {
+    open var formatCurrency: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 2
         formatter.minimumIntegerDigits = 1
         formatter.locale = Locale(identifier: Locale.current.identifier)
-        return formatter.string(from: self)!
+        return formatter.string(from: self) ?? ""
     }
     
 }

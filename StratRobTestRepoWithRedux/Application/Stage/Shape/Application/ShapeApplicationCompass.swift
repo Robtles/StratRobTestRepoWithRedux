@@ -15,16 +15,11 @@ public typealias Compass = ShapeApplicationCompass
 
 // MARK: - Type
 
-open class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelegate, StoreSubscriber {
+open class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelegate, StoreSubscriber, CompassProtocol {
 
     // MARK: - Static Properties
     
     public static let shared = Compass()
-    
-    /// Should extend this
-    open var tabBarViewControllers: [ShapeControllersFeature] {
-        return []
-    }
     
     // MARK: - Init Methods
     
@@ -43,9 +38,13 @@ open class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelega
 
     // MARK: Life Methods
     
+    open override func setViewControllers(_ viewControllers: [UIViewController]?, animated: Bool) {
+        super.setViewControllers(tabBarSections, animated: animated)
+    }
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
-        self.setViewControllers(tabBarViewControllers, animated: true)
+        self.setViewControllers(tabBarSections, animated: true)
         self.tabBar.isHidden = true
     }
     
@@ -69,4 +68,20 @@ open class ShapeApplicationCompass: UITabBarController, UITabBarControllerDelega
     
     open func newState(state: Store) {}
 
+}
+
+
+
+public protocol CompassProtocol {
+    
+    var tabBarSections: [ShapeControllersSection] { get }
+    
+}
+
+extension CompassProtocol {
+    
+    public var tabBarSections: [ShapeControllersSection] {
+        return []
+    }
+    
 }

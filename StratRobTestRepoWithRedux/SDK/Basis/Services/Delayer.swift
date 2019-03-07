@@ -10,7 +10,7 @@ import Foundation
 
 
 
-struct Delayer {
+public struct Delayer {
     
     static public func delay(_ seconds: Double, completion: @escaping () -> ()) {
         let popTime = DispatchTime.now() + Double(Int64(Double(NSEC_PER_SEC) * seconds)) / Double(NSEC_PER_SEC)

@@ -10,17 +10,17 @@ import UIKit
 
 
 
-class ShapeApplicationMainBase: UIResponder, UIApplicationDelegate {
+open class ShapeApplicationMainBase: UIResponder, UIApplicationDelegate {
     
     // MARK: View Properties
     
-    static var rootViewController = UIApplication.shared.delegate?.window??.rootViewController
+    static public var rootViewController = UIApplication.shared.delegate?.window??.rootViewController
     
-    var window: UIWindow?
+    open var window: UIWindow?
     
     // MARK: Life Methods
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         defer {
             self.window = UIWindow(frame: UIScreen.main.bounds)
             Compass.shared.updateContent()
@@ -31,11 +31,11 @@ class ShapeApplicationMainBase: UIResponder, UIApplicationDelegate {
     
     // MARK: View Methods
     
-    func defaultLaunch() {
+    open func defaultLaunch() {
         self.replace(with: Compass.shared)
     }
     
-    func replace(with viewController: UIViewController) {
+    open func replace(with viewController: UIViewController) {
         defer {
             window?.makeKeyAndVisible()
         }
@@ -48,7 +48,7 @@ class ShapeApplicationMainBase: UIResponder, UIApplicationDelegate {
         }
     }
     
-    static var topMostViewController: UIViewController? {
+    static public var topMostViewController: UIViewController? {
         guard let windowRootViewController = UIApplication.shared.delegate?.window??.rootViewController else {
             return nil
         }
